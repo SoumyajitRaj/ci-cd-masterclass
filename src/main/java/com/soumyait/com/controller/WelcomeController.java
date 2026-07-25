@@ -24,4 +24,8 @@ public class WelcomeController {
                 HttpStatus.OK
         );
     }
+    @GetMapping("/greet")
+    public ResponseEntity<String> greet() {
+        return new ResponseEntity<>("Good Morning!!!.....", HttpStatus.OK);
+    }
 }
