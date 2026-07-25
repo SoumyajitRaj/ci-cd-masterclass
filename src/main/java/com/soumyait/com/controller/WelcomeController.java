@@ -28,4 +28,8 @@ public class WelcomeController {
     public ResponseEntity<String> greet() {
         return new ResponseEntity<>("Good Morning!!!.....", HttpStatus.OK);
     }
+    @GetMapping("/about")
+    public ResponseEntity<String> detailsUser() {
+        return new ResponseEntity<>("Hi Soumyajit. How are you!!!.....", HttpStatus.OK);
+    }
 }
